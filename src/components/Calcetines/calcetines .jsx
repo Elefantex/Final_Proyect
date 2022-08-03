@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { db } from '../../firebase/firebase';
 import './calcetines.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSocks} from '@fortawesome/free-solid-svg-icons'
+import { faSocks } from '@fortawesome/free-solid-svg-icons'
 
 
 function CalcetinesSinRegistrar() {
@@ -15,12 +15,12 @@ function CalcetinesSinRegistrar() {
             const p = snapshot.docs.map((documento) => {
                 return { ...documento.data(), id: documento.id };
             });
-             
+
             setLista(p)
         });
         numeroItem()
     }, []);
-    
+
 
 
     const numeroItem = async () => {
@@ -38,12 +38,13 @@ function CalcetinesSinRegistrar() {
                         <div>
                             <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faSocks}></FontAwesomeIcon></h3><h4>De color: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
                             </div>
-                                
+
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
+          
 
         </>
     )
