@@ -1,0 +1,99 @@
+.Juntando {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+.proyectar {
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.borde {
+    border-radius: 10px;
+    border-color: black;
+    border: dotted;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 15px;
+    width: 550px;
+
+}
+
+.green {
+    color: green;
+    font-size: 25px;
+}
+
+.gray {
+    color: gray;
+}
+
+.item-dividir {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.basura-icon {
+    font-size: 20px;
+    color: black
+}
+
+.borde-cesta {
+    border-radius: 10px;
+    border-color: black;
+    border: dotted;
+    padding: 15px;
+    margin: 15px;
+    margin-left: 15px;
+
+}
+
+.centrar {
+    margin-top: 10px;
+}
+
+
+@media (max-width:480px) {
+    .proyectar {
+
+        display: block;
+    }
+
+    .borde {
+        padding: auto;
+        margin: 5px;
+        width: auto;
+    }
+
+    h3 {
+        font-size: small;
+    }
+
+    h4 {
+        font-size: small;
+    }
+
+    h5 {
+        font-size: small;
+    }
+
+    .item-dividir {
+        display: flex;
+
+
+    }
+
+    .boton-pequeno {
+        font-size: 15px;
+    }
+
+
+}

@@ -1,0 +1,75 @@
+.CajaRegistro {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.DatosRegistro {
+    box-sizing: content-box;
+    border: solid;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+    width: 280px;
+    height: 300px;
+    padding: 30px;
+
+}
+
+.FormularioRegistro {
+
+    padding: 3px;
+}
+.Boton-mostar-Registro{
+    margin-left: 5px;
+}
+.Boton-borrar-Registro{
+    margin-left: 150px;
+}
+
+.buttonIn {
+    width: 394px;
+    position: relative;
+}
+
+.input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 56px;
+    width: 394px;
+    border-radius: 5px;
+}
+
+.boton-prueba {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: -10px;
+    height: 56px;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateX(2px);
+}
+@media (max-width:480px) {
+  .input{
+    width: auto;
+    height: auto;
+  }
+  .buttonIn{
+    width: auto;
+  }
+  .DatosLogin{
+    width: auto;
+    padding-top:50px;
+  }
+  .CajaLogin{
+    padding-top: 15px;
+  }
+    
+}

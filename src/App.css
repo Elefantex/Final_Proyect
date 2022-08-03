@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+ 
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +13,18 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.NoMostrar:link {
+  text-decoration: none;
+}
+.NoMostrar:visited{
+  text-decoration: none;
+}
+.NoMostrar:hover{
+  text-decoration: none;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,10 +47,91 @@
   color: #61dafb;
 }
 
+.division {
+
+  background-color: lightblue;
+
+
+}
+
+
+.todoEnDos {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+}
+
+.favorito {
+  flex-wrap: wrap;
+  background-color: purple;
+  border-radius: 10px;
+  border-color: black;
+  border: solid;
+  margin-top: 15px;
+  padding: 25px;
+
+  justify-content: space-around;
+  text-align: center;
+
+
+}
+
+.favorito2 {
+  font-size: 20px;
+
+
+
+}
+
+.todoEnTres {
+  flex-shrink: initial;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.titulo {
+  color: white;
+  margin-left: 5px;
+}
+
+.subtitulo {
+  font-size: 15px;
+  color: white;
+  margin-left: 5px;
+}
+
+
+.busqueda {
+  margin-top: 25px;
+}
+
+.bigPreferencias {
+  margin-top: 25px;
+}
+
+
+
+
+.borrar {
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 15px;
+
+}
+
+.borrar:hover {
+  background-color: red;
+  transition: 0.5s;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

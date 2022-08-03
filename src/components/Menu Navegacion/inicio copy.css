@@ -1,0 +1,11 @@
+.inicio {
+    background-color: lightblue;
+    display: flex;
+
+}
+
+.principio {
+    align-self: flex-start;
+
+}
+

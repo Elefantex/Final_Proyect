@@ -1,0 +1,101 @@
+.CajaLogin {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.DatosLogin {
+
+    border: solid;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+    width: 500px;
+    height: auto;
+    padding: 50px;
+
+}
+
+.FormularioLogin {
+
+    padding: 3px;
+
+}
+
+.Boton-mostrar-Login {
+    margin-left: 5px;
+}
+
+.Boton-borrar-Login {
+    margin-left: 150px;
+}
+
+.Boton-registro-Login {
+    margin-left: 115px;
+}
+
+.CajaLogin2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.DatosLogin2 {
+
+    border: solid;
+    border-radius: 10px;
+    background-color: aquamarine;
+    width: 500px;
+    height: auto;
+    padding: 50px;
+
+}
+
+.buttonIn {
+    width: 394px;
+    position: relative;
+}
+
+.input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 56px;
+    width: 394px;
+    border-radius: 5px;
+}
+
+.boton-prueba {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: -10px;
+    height: 56px;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateX(2px);
+}
+
+@media (max-width:480px) {
+    .input{
+      width: auto;
+      height: auto;
+    }
+    .buttonIn{
+      width: auto;
+    }
+    .DatosLogin2{
+      width: auto;
+      padding-top:50px;
+    }
+    .CajaLogin2{
+      padding-top: 15px;
+    }
+      
+  }

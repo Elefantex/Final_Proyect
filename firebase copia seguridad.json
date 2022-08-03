@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "/.*",
+      "/node_modules/"
+    ],
+    "rewrites": [
+      
+      {
+        "source": "/login",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/anadir",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/cesta",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
