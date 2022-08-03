@@ -6,7 +6,6 @@ import Carousel from "react-simply-carousel";
 
 
 
-
 class Inicio extends Component {
 
     state = {
