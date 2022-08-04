@@ -113,7 +113,9 @@ function Cabecera() {
         <div class="todo2" >
           <a href="/" class="NoMostrar"> <div class="titulo" >Samuel Market
           </div>
-            <div class="subtitulo">Donde encontraras toda la ropa para tu día a día</div>
+            <div class="subtitulo">{usuario ? "Donde encontraras toda la ropa para tu día a día" : "Registrarte para empezar a comprar"}
+             
+              </div>
           </a>
 
 
