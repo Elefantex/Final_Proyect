@@ -57,6 +57,9 @@ import RutaPrivadaCorbatas from './components/Ruta privada/Ruta privada Corbatas
 import RutaPrivadaLogin from './components/Ruta privada/Ruta Privada Login/RutaPrivadaLogin';
 import RutaPrivadaPantalones from './components/Ruta privada/Ruta privada Pantalones/RutaPrivadaPantalones';
 import RutaPrivadaRegistro from './components/Ruta privada/Ruta Privada Registro/RutaPrivadaRegistro';
+import Pagar from "./components/Pago/pago";
+import Perfil from "./components/Perfil/perfil";
+import EditarPerfil from "./components/EditarPerfil/editarPerfil";
 import { AuthProvider } from './contextos/AuthContext';
 
 
@@ -66,7 +69,7 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Cabecera />
-        
+
         <Routes>
 
           <Route path='/pantalones' element={
@@ -179,24 +182,27 @@ function App() {
 
           <Route path='/cesta' element={
             <RutaPrivadaCesta>
-              <Cesta/>
+              <Cesta />
             </RutaPrivadaCesta>
           } />
 
           <Route path='/login' element={
             <RutaPrivadaLogin>
-              <Login/>
+              <Login />
             </RutaPrivadaLogin>
-          }/>
+          } />
           <Route path='/registro' element={
             <RutaPrivadaRegistro>
-              <Registro/>
+              <Registro />
             </RutaPrivadaRegistro>
-          }/>
+          } />
 
           <Route path='/*' element={<Error />} />
 
           <Route path='/' element={<Inicio />} />
+          <Route path='/pago' element={<Pagar />} />
+          <Route path='/perfil' element={<Perfil />} />
+          <Route path="/editarPerfil" element={<EditarPerfil/>}/>
 
         </Routes>
       </BrowserRouter>

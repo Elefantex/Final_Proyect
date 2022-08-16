@@ -51,31 +51,31 @@ const Registro = () => {
         // Comprobamos del lado del cliente que el correo sea valido.
         const expresionRegular = /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+/;
         if (!expresionRegular.test(correo)) {
-            alert("Por favor ingresa un correo electronico valido")
+            alert("Insert a correct email")
             cambiarEstadoAlerta(true);
             cambiarAlerta({
                 tipo: 'error',
-                mensaje: 'Por favor ingresa un correo electrónico valido'
+                mensaje: 'Insert a correct email'
             });
             return;
         }
 
         if (correo === '' || password === '' || password2 === '') {
-            alert("Por favor rellena todos los datos")
+            alert("Fill all the fields")
             cambiarEstadoAlerta(true);
             cambiarAlerta({
                 tipo: 'error',
-                mensaje: 'Por favor rellena todos los datos'
+                mensaje: 'Fill all the fields'
             });
             return;
         }
 
         if (password !== password2) {
-            alert("Contraseñas diferentes")
+            alert("Password does not match")
             cambiarEstadoAlerta(true);
             cambiarAlerta({
                 tipo: 'error',
-                mensaje: 'Las contraseñas no son iguales'
+                mensaje: 'Password does not match'
             });
             return;
         }
@@ -90,15 +90,15 @@ const Registro = () => {
             let mensaje;
             switch (error.code) {
                 case 'auth/weak-password':
-                    mensaje = 'La contraseña tiene que ser de al menos 6 caracteres.'
-                    alert("La contraseña tiene que tener más de 6 caracteres")
+                    mensaje = 'Password has to be at least 6 characters'
+                    alert("Password has to be at least 6 characters")
                     break;
                 case 'auth/email-already-in-use':
                     mensaje = 'Ya existe una cuenta con el correo electrónico proporcionado.'
-                    alert("Ya existe una cuenta con el correo electrónico proporcionado")
+                    alert("There is an account with this email")
                     break;
                 case 'auth/invalid-email':
-                    mensaje = 'El correo electrónico no es válido.'
+                    mensaje = 'Invalid email'
                     break;
                 default:
                     mensaje = 'Hubo un error al intentar crear la cuenta.'
@@ -121,7 +121,7 @@ const Registro = () => {
 
                         <form onSubmit={handleSubmit}>
                             <p>
-                                <h2>Correo Electronico</h2>
+                                <h2>Email</h2>
 
                                 <input type="email"
                                     name="email"
@@ -132,7 +132,7 @@ const Registro = () => {
                             </p>
 
                             <h2>
-                                Contraseña
+                                Password
                             </h2>
                             <p>
                                 <div class="buttonIn">
@@ -149,7 +149,7 @@ const Registro = () => {
                                 </div>
                             </p>
                             <h2>
-                                Verificar contraseña
+                                Verify password
                             </h2>
                             <p>
                                 <div class="buttonIn">
@@ -169,7 +169,7 @@ const Registro = () => {
                             </p>
 
                             <p>
-                                <button primario type="submit" class="btn btn-outline-primary">Registrar</button>
+                                <button primario type="submit" class="btn btn-outline-primary">Sign up</button>
                             </p>
 
 
@@ -177,7 +177,7 @@ const Registro = () => {
                         </form>
                         <button class="btn btn-outline-light">
                             <Link to="/login">
-                                Acceder a login
+                                Go to log in
                             </Link>
                         </button>
                     </div>

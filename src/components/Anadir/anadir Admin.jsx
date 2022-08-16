@@ -54,50 +54,50 @@ function AnadirAdmin() {
                         <div class="DatosLogin">
                             <form action="" onSubmit={pantalones}>
                                 <div>
-                                    <label for="nombre">Introduce el nombre:</label>
+                                    <label for="nombre">Insert the name:</label>
                                     <input
                                         placeholder="Inserte el nombre" class="form-control" value={pantalon} onChange={(e) => setPantalon(e.target.value)}
                                     />
                                 </div>
                                 <div>
-                                    <label for="number">Introduce el precio:</label>
+                                    <label for="number">Inser the price</label>
                                     <input
                                         placeholder="Inserte el precio" class="form-control" value={precio} onChange={(e) => setPrecio(e.target.value)} min="0" type="number" step=".01"
                                     />
                                 </div>
                                 <div>
-                                    <label for="color">Introduce el color:</label>
+                                    <label for="color">Inser the colour</label>
                                     <input
                                         placeholder="Inserte el color" class="form-control" value={color} onChange={(e) => setColor(e.target.value)} type="text"
                                     />
                                 </div>
 
                                 <div>
-                                    <label for="coleccion" class="form-label mt-4">Introduce la coleccion a la que añadir:</label>
+                                    <label for="coleccion" class="form-label mt-4">Insert the collection</label>
                                     <select id="coleccion" class="form-select" name="coleccion">
 
-                                        <option value="Nada" disabled selected>Seleccion una opcion</option>
+                                        <option value="Nada" disabled selected>Choose an option</option>
 
-                                        <option value="Bañadores" name="Bañadores" id="Bañadores">Bañadores</option>
+                                        <option value="Bañadores" name="Bañadores" id="Bañadores">Swimsuits</option>
 
-                                        <option value="Calcetines" name="Calcetines" id="Calcetines">Calcetines</option>
+                                        <option value="Calcetines" name="Calcetines" id="Calcetines">Socks</option>
 
-                                        <option value="Camisas" name="Camisas" id="Camisas">Camisas</option>
+                                        <option value="Camisas" name="Camisas" id="Camisas">Shirts</option>
 
-                                        <option value="Camisetas" name="Camisetas" id="Camisetas">Camisetas</option>
+                                        <option value="Camisetas" name="Camisetas" id="Camisetas">T shirts</option>
 
-                                        <option value="Chaquetas" name="Chaquetas" id="Chaquetas">Chaquetas</option>
+                                        <option value="Chaquetas" name="Chaquetas" id="Chaquetas">Jackets</option>
 
-                                        <option value="Corbatas" name="Corbatas" id="Corbatas">Corbatas</option>
+                                        <option value="Corbatas" name="Corbatas" id="Corbatas">Ties</option>
 
-                                        <option value="Gafas" name="Gafas" id="Gafas">Gafas</option>
+                                        <option value="Gafas" name="Gafas" id="Gafas">Glasses</option>
 
-                                        <option value="Pantalones" name="Pantalones" id="Pantalones">Pantalones</option>
+                                        <option value="Pantalones" name="Pantalones" id="Pantalones">Jeans</option>
 
                                     </select>
                                 </div>
                                 
-                                <button type="submit" class="btn btn-outline-light">Enviar a la base de datos</button>
+                                <button type="submit" class="btn btn-outline-light">Upload to database</button>
 
                             </form>
                             

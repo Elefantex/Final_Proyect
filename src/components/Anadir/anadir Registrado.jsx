@@ -9,10 +9,10 @@ function AnadirRegistrado() {
 
     return ((
         <><h1>
-            Tienes que ser administrador de la pagina para poder acceder a esta web
+            You must be admin to access this website
         </h1>
             <Link to="/">
-                Volver a la tienda
+                Go back to the store
             </Link>
         </>
 

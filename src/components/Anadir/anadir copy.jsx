@@ -97,7 +97,7 @@ function Anadir() {
                             </select>
                         </div>
 
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>

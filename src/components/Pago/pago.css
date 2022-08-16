@@ -1,0 +1,31 @@
+.separar{display: flex;
+justify-content: space-evenly;
+margin-top:15px}
+.espacio{
+    padding-right: 150px;
+}
+.espacio-izquierda{
+    margin-left: 15px;
+}
+.tamano-menor{
+    width: 150%;
+    height: 15%;
+
+
+}
+.separar-pago{
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (max-width: 480px){
+    .separar{
+        flex-direction: column;
+    }
+
+.separar-pago{
+    margin:auto
+}
+.tamano-menor{
+    width: 100%;
+}
+}

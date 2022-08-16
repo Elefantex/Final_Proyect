@@ -59,20 +59,10 @@ function Cesta() {
     async function aumentar(c) {
         await updateDoc(doc(db, usuario.email, c.id), { cantidad: increment(1) })
     }
-    const Pagar2 = async (listaColor) => {
-        let todoColor = 0
-
-        for (let index = 0; index < listaColor.length; index++) {
-
-            await deleteDoc(doc(db, usuario.email, listaColor[index].id))
-
-            setColores(todoColor)
-        }
-
-
-        alert("Gracias por ayudar al comercio local")
-        window.location.href = "/"
-
+    
+    function Pagar() {
+        
+        window.location.href = "/pago"
     }
 
     // function Descuento(final) {
@@ -101,7 +91,7 @@ function Cesta() {
         <>
 
 
-            <h1>Cesta de la compra:</h1>
+            <h1>Basket:</h1>
 
 
 
@@ -110,7 +100,7 @@ function Cesta() {
             {lista.map((c) => (
                 <div class="borde-cesta" key={c.id}>
 
-                    <div > <h3> <b>{c.id}</b></h3> <h4> {c.precio}€ de color {c.color}. {c.cantidad} unidades. Total = {((c.precio) * (c.cantidad)).toFixed(2)}€</h4> </div>
+                    <div > <h3> <b>{c.id}</b></h3> <h4> {c.precio}€ which colour is {c.color}. {c.cantidad} units. Total = {((c.precio) * (c.cantidad)).toFixed(2)}€</h4> </div>
                     <p>
 
                         <button class="btn" onClick={() => aumentar(c)}><FaPlus /></button>
@@ -118,7 +108,9 @@ function Cesta() {
                         {c.cantidad > 1 ?
                             <><button class="btn" onClick={() => disminuir(c)}><FaMinus /></button> </> :
                             <></>}
-                        <button class="btn btn-danger" onClick={() => Borrar(c.id)}>Borrar todas las unidades <FaTrash className="gray" /></button>
+                        <button class="btn btn-danger" onClick={() => Borrar(c.id)}>Remove all units <FaTrash className="gray" /></button>
+
+
 
                     </p>
 
@@ -127,9 +119,11 @@ function Cesta() {
             ))
             }
             <div>{listaColor.length == 0 ?
-                <div><h1>No tienes productos en la cesta, empieza a comprar :D</h1>
-                    <h2><a href="/">Ir a comprar</a></h2></div> :
-                <div> <h2><b>Total {final}€</b></h2><p><button class="btn btn-outline-danger" onClick={() => Pagar2(listaColor)}>Pagar todo <FaWallet /></button></p></div>
+                <div><h1>You do not have any item in the shopping basket, start to buy :D
+                  </h1>
+                    <h2><a href="/">Shopping</a></h2></div> : <>
+                    
+                    <div><button class="btn btn-outline-danger" onClick={() => Pagar()}>Check out <FaWallet /></button></div></>
             }
 
 

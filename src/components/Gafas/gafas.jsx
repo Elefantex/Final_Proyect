@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import { db } from '../../firebase/firebase'
 import './gafas.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlasses} from '@fortawesome/free-solid-svg-icons'
+import { faGlasses } from '@fortawesome/free-solid-svg-icons'
 
 
 function AbrigosSinRegistrar() {
@@ -16,7 +16,7 @@ function AbrigosSinRegistrar() {
             const p = snapshot.docs.map((documento) => {
                 return { ...documento.data(), id: documento.id };
             });
-            
+
             setLista(p)
         });
         numeroItem()
@@ -38,7 +38,7 @@ function AbrigosSinRegistrar() {
         const nombreItem = c.id
         const existeItem = await getDoc(doc(db, "Cesta", nombreItem));
         if (existeItem.exists()) {
-            
+
             await updateDoc(doc(db, "Cesta", nombreItem), { cantidad: increment(1) })
         } else {
             await setDoc(doc(db, "Cesta", nombreItem), {
@@ -48,12 +48,12 @@ function AbrigosSinRegistrar() {
                 id: c.id
             });
 
-           
+
         }
 
 
         const quantity = await getDoc(doc(db, "Cesta", c.id))
-         (quantity.data().cantidad)
+            (quantity.data().cantidad)
         const quantityCesta = quantity.data().cantidad
 
 
@@ -65,7 +65,7 @@ function AbrigosSinRegistrar() {
 
     const cestaDeLaCompra = async (c) => {
 
-       
+
         await setDoc(doc(db, "Cesta", "contador"), {
 
             precio: c.precio,
@@ -75,7 +75,7 @@ function AbrigosSinRegistrar() {
         })
 
 
-         (c.id)
+            (c.id)
 
 
     }
@@ -87,9 +87,12 @@ function AbrigosSinRegistrar() {
                 {lista.map((c) => (
                     <div class="borde" key={c.id}>
                         <div>
-                            <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faGlasses}></FontAwesomeIcon></h3><h4>De color: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
+                            <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faGlasses}></FontAwesomeIcon></h3><h4>Colour: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
                             </div>
-                                
+                                <div>
+                                    <button onClick={() => alert("Add to the basket")} class="btn btn-primary"><h5 class="centrar">Add to basket </h5></button>
+                                </div>
+
                             </div>
                         </div>
                     </div>

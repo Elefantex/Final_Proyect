@@ -10,9 +10,10 @@ import './cabecera.css'
 import '../../bootstrap.css'
 import { FaHome, } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPersonSwimming, faSocks, faShirt,faUserTie,faGlasses} from '@fortawesome/free-solid-svg-icons'
-import { RiDeleteBin6Line,RiShirtFill } from "react-icons/ri";
-import {GiMonclerJacket,GiTrousers } from "react-icons/gi";
+import { faPersonSwimming, faSocks, faShirt, faUserTie, faGlasses } from '@fortawesome/free-solid-svg-icons'
+import { RiDeleteBin6Line, RiShirtFill } from "react-icons/ri";
+import { GiMonclerJacket, GiTrousers } from "react-icons/gi";
+
 
 
 
@@ -23,6 +24,10 @@ import {GiMonclerJacket,GiTrousers } from "react-icons/gi";
 
 
 function Cabecera() {
+
+  
+
+
   const navigate = useNavigate();
   const { usuario } = useAuth();
 
@@ -91,9 +96,7 @@ function Cabecera() {
 
 
 
-
-
-
+ 
 
 
 
@@ -113,44 +116,54 @@ function Cabecera() {
         <div class="todo2" >
           <a href="/" class="NoMostrar"> <div class="titulo" >Samuel Market
           </div>
-            <div class="subtitulo">{usuario ? "Donde encontraras toda la ropa para tu día a día" : "Registrarte para empezar a comprar"}
-             
-              </div>
+            <div class="subtitulo">{usuario ? "Where you find clothes for everyday" : "Login to shopping"}
+
+            </div>
+
           </a>
 
 
+
+
         </div>
+        <div >
+
+        </div>
+        
         <div class="link">
+       
           <a href="/" class="links2"><FaHome className='home-icon' /></a>
+          
+
           {usuario ?
             (usuario.email == "1@1.com" ?
-            <a href='/anadir' class="links">Admin</a>
-              : <></>) :
+              <a href='/anadir' class="links">Admin</a>
+              : <><a href='/perfil' class="links">Profile</a></>) :
             <></>
           }
           {usuario ? (usuario.email == "1@1.com" ? <></>
             : (numeroCesta === 0 ?
-              <a href='/cesta' class="links">Cesta vacia</a>
-               :
-               <a href='/cesta' class="links">Cesta {final}</a>)) :
+              <a href='/cesta' class="links">Empty basket</a>
+              :
+              <a href='/cesta' class="links">Basket {final}</a>)) :
             <></>}
-          {usuario == null ? <a href="/login" class="links3">Login</a> : <div class="links4"><button class="btn btn-primary btn-sm" onClick={cerrarSesion} >Desconectar</button></div>}
+          {usuario == null ? <a href="/login" class="links3">Login</a> : <div class="links4"><button class="btn btn-primary btn-sm" onClick={cerrarSesion} >Log out</button></div>}
 
         </div>
 
       </div>
       <div class=" nav-bar horizontal">
-        <a href="/banadores" class="round">Bañadores <FontAwesomeIcon icon={faPersonSwimming}></FontAwesomeIcon></a>
-        <a href="/calcetines" class="round">Calcetines <FontAwesomeIcon icon={faSocks}></FontAwesomeIcon></a>
-        <a href="/camisas" class="round">Camisas <RiShirtFill/></a>
-        <a href="/camisetas" class="round">Camisetas <FontAwesomeIcon icon={faShirt}></FontAwesomeIcon></a>
-        <a href="/chaquetas" class="round">Chaquetas <GiMonclerJacket/></a>
-        <a href="/corbatas" class="round">Corbatas <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon></a>
-        <a href="/gafas" class="round">Gafas <FontAwesomeIcon icon={faGlasses}></FontAwesomeIcon></a>
-        <a href="/pantalones" class="round">Pantalones <GiTrousers/></a>
+        <a href="/banadores" class="round">Swimsuits <FontAwesomeIcon icon={faPersonSwimming}></FontAwesomeIcon></a>
+        <a href="/calcetines" class="round">Socks <FontAwesomeIcon icon={faSocks}></FontAwesomeIcon></a>
+        <a href="/camisas" class="round">Shirts <RiShirtFill /></a>
+        <a href="/camisetas" class="round">T shirts <FontAwesomeIcon icon={faShirt}></FontAwesomeIcon></a>
+        <a href="/chaquetas" class="round">Jackets <GiMonclerJacket /></a>
+        <a href="/corbatas" class="round">Ties <FontAwesomeIcon icon={faUserTie}></FontAwesomeIcon></a>
+        <a href="/gafas" class="round">Glasses <FontAwesomeIcon icon={faGlasses}></FontAwesomeIcon></a>
+        <a href="/pantalones" class="round">Jeans <GiTrousers /></a>
 
       </div>
- 
+
     </>
 
   )

@@ -8,8 +8,9 @@ function Error() {
     return (
         <div>
             <div>
-                ERROR PAGINA NO ENCONTRADA
-                <p class="bajar"><Link to="/">Inicio</Link></p>
+                ERROR PAGE NOT FOUND
+               
+                <p class="bajar"><Link to="/">Home</Link></p>
             </div>
 
 

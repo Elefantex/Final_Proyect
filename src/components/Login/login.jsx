@@ -37,21 +37,21 @@ const Login = () => {
         // Comprobamos del lado del cliente que el correo sea valido.
         const expresionRegular = /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+/;
         if (!expresionRegular.test(correo)) {
-            alert("Por favor ingresao un correo electronico valido")
+            alert("Insert a correct email")
             cambiarEstadoAlerta(true);
             cambiarAlerta({
                 tipo: 'error',
-                mensaje: 'Por ingresa un correo electrónico valido'
+                mensaje: 'Insert a correct email'
             });
             return;
         }
 
         if (correo === '' || password === '') {
-            alert("Por favor rellena todos los datos")
+            alert("Fill all the fields")
             cambiarEstadoAlerta(true);
             cambiarAlerta({
                 tipo: 'error',
-                mensaje: 'Por favor rellena todos los datos'
+                mensaje: 'Fill all the fields'
             });
             return;
         }
@@ -68,15 +68,15 @@ const Login = () => {
             switch (error.code) {
                 case 'auth/wrong-password':
                     mensaje = 'La contraseña no es correcta.'
-                    alert("La contraseña no es correcta.")
+                    alert("Incorrect password")
                     break;
                 case 'auth/email-already-in-use':
                     mensaje = 'Ya existe una cuenta con el correo electrónico proporcionado.'
-                    alert("Ya existe una cuenta con el correo electrónico proporcionado")
+                    alert("There is an account with this email")
                     break;
                 case 'auth/user-not-found':
                     mensaje = 'No se encontro ninguna cuenta con este correo electrónico.'
-                    alert("No se encontro ninguna cuenta con este correo electrónico.")
+                    alert("There is not any account with this email")
                     break;
                 default:
                     mensaje = 'Hubo un error al intentar crear la cuenta.'
@@ -100,7 +100,7 @@ const Login = () => {
                             <form onSubmit={handleSubmit} >
                                 <p>
 
-                                    <h2>Correo Electronico</h2>
+                                    <h2>Email</h2>
                                     <input type="email"
                                         name="email"
                                         class="form-control"
@@ -110,7 +110,7 @@ const Login = () => {
 
                                 </p>
 
-                                <h2>Contraseña</h2>
+                                <h2>Password</h2>
                                 <p>
 
                                     <div class="buttonIn">
@@ -130,14 +130,14 @@ const Login = () => {
                                 </p>
 
 
-                                <button primario type="submit" class="btn btn-outline-primary">Acceder</button>
+                                <button primario type="submit" class="btn btn-outline-primary">Log in</button>
                                 <p>
 
                                 </p>
                                 <p>
                                     <button class="btn btn-outline-light">
                                         <Link to="/registro">
-                                            Acceder a registro
+                                            Go to sign up
                                         </Link>
                                     </button>
 

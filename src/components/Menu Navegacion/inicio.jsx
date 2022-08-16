@@ -22,7 +22,7 @@ class Inicio extends Component {
         return (
             <div>
                 <h2 class="AlCentro">
-                    Ultimos productos en la tienda
+                    Last items in the store
                 </h2>
                 <div >
                     <Carousel
@@ -32,13 +32,13 @@ class Inicio extends Component {
                         itemsToScroll={1}
                     >
                         <div class="ocultar">
-                            <a href="/camisetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Camiseta Adidas</p></div></a>
-                            <a href="/camisetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Camisetas Nike</p></div></a>
-                            <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Calcetin Unico</p></div></a>
-                            <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Calcetin Rojo</p></div></a>
-                            <a href="/chaquetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Chaqueta nueva</p></div></a>
-                            <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Camisa Reebok</p></div></a>
-                            <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Camisa Adidas</p></div></a>
+                            <a href="/camisetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Adidas t shirt</p></div></a>
+                            <a href="/camisetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Nike t shirt</p></div></a>
+                            <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Unico sock</p></div></a>
+                            <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Rojo sock</p></div></a>
+                            <a href="/chaquetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Neva Jjcket</p></div></a>
+                            <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Reebok shirt</p></div></a>
+                            <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Adidas shirt</p></div></a>
                         </div>
                     </Carousel>
                 </div>

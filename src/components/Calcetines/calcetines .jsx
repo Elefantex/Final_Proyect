@@ -36,15 +36,18 @@ function CalcetinesSinRegistrar() {
                 {lista.map((c) => (
                     <div class="borde" key={c.id}>
                         <div>
-                            <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faSocks}></FontAwesomeIcon></h3><h4>De color: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
+                            <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faSocks}></FontAwesomeIcon></h3><h4>Colour: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
                             </div>
+                                <div>
+                                    <button onClick={() => alert("Login to buy")} class="btn btn-primary"><h5 class="centrar">Add to the basket </h5></button>
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-          
+
 
         </>
     )
