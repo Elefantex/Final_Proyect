@@ -105,43 +105,43 @@ function EditarPerfil() {
                             <div>
                                 <label for="nombre" >Insert your name:</label>
                                 <input
-                                    placeholder="Inserte el nombre" class="form-control" value={nombre} onChange={(e) => setNombre(e.target.value)}
+                                    placeholder="Insert your name" class="form-control" value={nombre} onChange={(e) => setNombre(e.target.value)}
                                 />
                             </div>
                             <div>
                                 <label for="number">Inser your surname:</label>
                                 <input
-                                    placeholder="Introduce tus apellidos" class="form-control" value={apellidos} onChange={(e) => setApellidos(e.target.value)}
+                                    placeholder="nser your surname" class="form-control" value={apellidos} onChange={(e) => setApellidos(e.target.value)}
                                 />
                             </div>
                             <div>
                                 <label for="color">Insert address</label>
                                 <input
-                                    placeholder="Introduce tu direccion postal" class="form-control" value={direccionPostal} onChange={(e) => setDireccionPostal(e.target.value)} type="text"
+                                    placeholder="Insert address" class="form-control" value={direccionPostal} onChange={(e) => setDireccionPostal(e.target.value)} type="text"
                                 />
                             </div>
                             <div>
                                 <label for="color">Insert Eircode</label>
                                 <input
-                                    placeholder="Introduce tu codigo postal" class="form-control" value={zipcode} onChange={(e) => setZipCode(e.target.value)} type="text"
+                                    placeholder="Insert Eircode" class="form-control" value={zipcode} onChange={(e) => setZipCode(e.target.value)} type="text"
                                 />
                             </div>
                             <div>
                                 <label for="color">Inser the city</label>
                                 <input
-                                    placeholder="Introduce tu ciudad" class="form-control" value={ciudad} onChange={(e) => setCiudad(e.target.value)} type="text"
+                                    placeholder="Inser the city" class="form-control" value={ciudad} onChange={(e) => setCiudad(e.target.value)} type="text"
                                 />
                             </div>
                             <div>
                                 <label for="color">Insert the country</label>
                                 <input
-                                    placeholder="Introduce el pais" class="form-control" value={pais} onChange={(e) => setPais(e.target.value)} type="text"
+                                    placeholder="Insert the country" class="form-control" value={pais} onChange={(e) => setPais(e.target.value)} type="text"
                                 />
                             </div>
                             <div>
                                 <label for="number">Insert the telephone number</label>
                                 <input
-                                    placeholder="Inserte el telefono" type="tel" id="phone" name="phone" class="form-control" value={telefono} onChange={(e) => setTelefono(e.target.value)}
+                                    placeholder="Insert the telephone number" type="tel" id="phone" name="phone" class="form-control" value={telefono} onChange={(e) => setTelefono(e.target.value)}
                                 />
                             </div>
 

@@ -90,7 +90,7 @@ function AbrigosSinRegistrar() {
                             <div class="item-dividir" ><div><h3> <b>{c.id}</b> <FontAwesomeIcon icon={faGlasses}></FontAwesomeIcon></h3><h4>Colour: <b>{c.color}</b></h4><h5><b>{c.precio}€</b></h5>
                             </div>
                                 <div>
-                                    <button onClick={() => alert("Add to the basket")} class="btn btn-primary"><h5 class="centrar">Add to basket </h5></button>
+                                    <button onClick={() => alert("Login to buy")} class="btn btn-primary"><h5 class="centrar">Add to basket </h5></button>
                                 </div>
 
                             </div>

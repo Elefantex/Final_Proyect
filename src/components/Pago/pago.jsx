@@ -215,7 +215,7 @@ function Pagar() {
 
 
                     <div class="separar-pago">
-                        <div> <h2><b>Final amount {final}€</b></h2><p>
+                        <div> <h2><b>Total amount {final}€</b></h2><p>
 
                             <div>
                                 {
@@ -225,7 +225,7 @@ function Pagar() {
                             </div>
                             <button class="btn btn-outline-danger" onClick={() => Pagar2(listaColor)}>Pay all <FaWallet /></button></p></div>
                         <div class="input-group mb-5 tamano-menor">
-                            <input type="Cupon" class="form-control" placeholder="Cupon descuento" id="Descuento" />
+                            <input type="Cupon" class="form-control" placeholder="Voucher" id="Descuento" />
                             <button className="btn btn-primary" id="botonDescuento" onClick={() => Descuento(final)}>Use</button>
 
 
@@ -332,7 +332,7 @@ function Pagar() {
 
 
                     <div class="separar-pago">
-                        <div> <h2><b>Final amount {final}€</b></h2><p>
+                        <div> <h2><b>Total amount {final}€</b></h2><p>
 
                             <div>
                                 {
@@ -342,7 +342,7 @@ function Pagar() {
                             </div>
                             <button class="btn btn-outline-danger" onClick={() => Pagar2(listaColor)}>Pay all <FaWallet /></button></p></div>
                         <div class="input-group mb-5 tamano-menor">
-                            <input type="Cupon" class="form-control" placeholder="Cupon descuento" id="Descuento" />
+                            <input type="Cupon" class="form-control" placeholder="Voucher" id="Descuento" />
                             <button className="btn btn-primary" id="botonDescuento" onClick={() => Descuento(final)}>Use</button>
 
 
