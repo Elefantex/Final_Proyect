@@ -36,7 +36,7 @@ class Inicio extends Component {
                             <a href="/camisetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio"> Nike t shirt</p></div></a>
                             <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Unico sock</p></div></a>
                             <a href="/calcetines" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Rojo sock</p></div></a>
-                            <a href="/chaquetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Neva Jjcket</p></div></a>
+                            <a href="/chaquetas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Neva Jacket</p></div></a>
                             <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Reebok shirt</p></div></a>
                             <a href="/camisas" class="NoLink"><div style={{ width: 250, height: 90 }} class="reducir"><p class="roundInicio">  Adidas shirt</p></div></a>
                         </div>

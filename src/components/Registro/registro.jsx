@@ -175,10 +175,10 @@ const Registro = () => {
 
 
                         </form>
-                        <button class="btn btn-outline-light">
-                            <Link to="/login">
+                        <button class="btn btn-outline-light" onClick={()=>window.location.href = '/login'}>
+                           
                                 Go to log in
-                            </Link>
+                            
                         </button>
                     </div>
                 </div>

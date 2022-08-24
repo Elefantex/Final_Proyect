@@ -135,15 +135,16 @@ const Login = () => {
 
                                 </p>
                                 <p>
-                                    <button class="btn btn-outline-light">
-                                        <Link to="/registro">
-                                            Go to sign up
-                                        </Link>
-                                    </button>
+                                   
 
                                 </p>
 
                             </form>
+                            <button class="btn btn-outline-light" onClick={()=>window.location.href='/registro'}>
+                                        
+                                        Go to sign up
+                                    
+                                </button>
                         </div>
                     </div>
                 </div>

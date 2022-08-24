@@ -35,7 +35,7 @@
 }
 
 .links {
- 
+
   font-size: 17px;
   border: solid;
   background-color: skyblue;
@@ -55,8 +55,29 @@
   transition: all 1s;
 }
 
+.links5 {
+
+  font-size: 17px;
+  border: solid;
+  background-color: skyblue;
+  border-color: red;
+  border-width: 1px;
+  align-self: center;
+  padding: 20px;
+  font-size: bold;
+  text-decoration: none;
+
+
+}
+
+.links5:hover {
+  background-color: #14ddac;
+
+  transition: all 1s;
+}
+
 .links2 {
-  
+
   font-size: 17px;
   border: solid;
   background-color: skyblue;
@@ -78,7 +99,7 @@
 }
 
 .links3 {
-  
+
   font-size: 17px;
   border: solid;
   background-color: skyblue;
@@ -100,16 +121,22 @@
 
 .links4 {
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   border: solid;
   background-color: skyblue;
   border-color: red;
   border-width: 1px;
   align-self: center;
-  padding: 11px;
+  padding: 10.5px;
   font-size: bold;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+
+
+.padd-auto {
+  padding: auto;
 }
 
 .horizontal {
@@ -163,14 +190,41 @@
   .todo {
     flex-direction: column;
   }
-  .horizontal{
+
+  .horizontal {
     flex-direction: column;
     justify-content: baseline;
   }
-  .round{
+
+  .round {
     padding: 0px;
-    margin-top:0px;
+    margin-top: 0px;
     margin-bottom: 0px;
   }
-  
+
+}
+
+@media (max-width:361px) {
+  .round {
+    margin: 0px
+  }
+
+  .links2 {
+    visibility: hidden;
+    display: none;
+  }
+
+  .links {
+    font-size: 17px;
+    border: solid;
+    background-color: skyblue;
+    border-color: red;
+    border-width: 1px;
+    align-self: center;
+    padding: 20px;
+   
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+  }
 }

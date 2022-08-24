@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonSwimming, faSocks, faShirt, faUserTie, faGlasses } from '@fortawesome/free-solid-svg-icons'
 import { RiDeleteBin6Line, RiShirtFill } from "react-icons/ri";
 import { GiMonclerJacket, GiTrousers } from "react-icons/gi";
+import { FaShoppingBasket } from "react-icons/fa";
 
 
 
@@ -143,9 +144,9 @@ function Cabecera() {
           }
           {usuario ? (usuario.email == "1@1.com" ? <></>
             : (numeroCesta === 0 ?
-              <a href='/cesta' class="links">Empty basket</a>
+              <a href='/cesta' class="links5">Empty <FaShoppingBasket /></a>
               :
-              <a href='/cesta' class="links">Basket {final}</a>)) :
+              <a href='/cesta' class="links5">Basket {final}</a>)) :
             <></>}
           {usuario == null ? <a href="/login" class="links3">Login</a> : <div class="links4"><button class="btn btn-primary btn-sm" onClick={cerrarSesion} >Log out</button></div>}
 
