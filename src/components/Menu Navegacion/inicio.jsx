@@ -23,6 +23,7 @@ class Inicio extends Component {
             <div>
                 <h2 class="AlCentro">
                     Last items in the store
+                    2222
                 </h2>
                 <div >
                     <Carousel
